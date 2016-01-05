@@ -1,5 +1,5 @@
 "use strict";
-function acmeMalarkey(malarkey) {
+function ethcbMalarkey(malarkey) {
     return {
         restrict: 'E',
         scope: {
@@ -11,27 +11,19 @@ function acmeMalarkey(malarkey) {
         controllerAs: 'vm'
     };
 }
-exports.acmeMalarkey = acmeMalarkey;
+exports.ethcbMalarkey = ethcbMalarkey;
 function linkFunc(scope, el, attr, vm) {
     var watcher;
     var typist = vm.malarkey(el[0], {
-        typeSpeed: 40,
+        typeSpeed: 96,
         deleteSpeed: 40,
         pauseDelay: 800,
         loop: true,
         postfix: ' '
     });
-    el.addClass('acme-malarkey');
+    el.addClass('ethcb-malarkey');
     angular.forEach(scope.extraValues, function (value) {
         typist.type(value).pause().delete();
-    });
-    watcher = scope.$watch('vm.contributors', function (current, original) {
-        angular.forEach(vm.contributors, function (contributor) {
-            typist.type(contributor.login).pause().delete();
-        });
-    });
-    scope.$on('$destroy', function () {
-        watcher();
     });
 }
 var MalarkeyController = (function () {

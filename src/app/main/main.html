@@ -1,21 +1,21 @@
 <div layout="vertical" layout-fill>
 
   <md-content>
-    <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
+
+    <!-- <header>
+      <ethcb-navbar creation-date="main.creationDate"></ethcb-navbar>
+    </header> -->
 
     <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
+      <h1>Ethereum Chromebit</h1>
+
+      <h3 style="margin-top: 196px">Peer 2 Peer, Distributed, Trustless</h3>
+
+      <ethcb-malarkey class="ethcb-uses" extra-values="['ChromeOS', 'Go Lang', 'Ethereum']"></ethcb-malarkey>
+
     </section>
+
+
 
     <div class="techs" layout-align="center">
       <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">

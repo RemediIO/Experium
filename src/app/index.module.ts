@@ -6,16 +6,16 @@ import { runBlock } from './index.run';
 import { MainController } from './main/main.controller';
 import { GithubContributor } from '../app/components/githubContributor/githubContributor.service';
 import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service';
-import { acmeNavbar } from '../app/components/navbar/navbar.directive';
-import { acmeMalarkey } from '../app/components/malarkey/malarkey.directive';
+import { ethcbNavbar } from '../app/components/navbar/navbar.directive';
+import { ethcbMalarkey } from '../app/components/malarkey/malarkey.directive';
 
 declare var malarkey: any;
 declare var moment: moment.MomentStatic;
 
-module etherChromebit {
+module EtherChromebit {
   'use strict';
 
-  angular.module('etherChromebit', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr'])
+  angular.module('EtherChromebit', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr'])
     .constant('malarkey', malarkey)
     .constant('moment', moment)
     .config(config)
@@ -24,6 +24,6 @@ module etherChromebit {
     .service('githubContributor', GithubContributor)
     .service('webDevTec', WebDevTecService)
     .controller('MainController', MainController)
-    .directive('acmeNavbar', acmeNavbar)
-    .directive('acmeMalarkey', acmeMalarkey);
+    .directive('ethcbNavbar', ethcbNavbar)
+    .directive('ethcbMalarkey', ethcbMalarkey);
 }

@@ -66,9 +66,25 @@ md-toolbar.md-default-theme {
 section.jumbotron {
   margin-bottom: 30px;
   padding: 1px 30px;
-  background-color: #5aadbb;
+  background-color: #000;
+  background-image: url("/assets/images/chromebit-dark-box-eth.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
   text-align: center;
+  height: 386px;
+  color: white;
 
+  h1 {
+    font-size: 3em;
+  }
+}
+
+section.ethcb-uses {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  text-align: center;
+  height: 128px;
   color: white;
 
   h1 {

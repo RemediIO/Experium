@@ -4,7 +4,7 @@ import { WebDevTecService } from '../components/webDevTec/webDevTec.service';
 describe('controllers', () => {
   let mainController: MainController;
 
-  beforeEach(angular.mock.module('etherChromebit'));
+  beforeEach(angular.mock.module('EtherChromebit'));
 
   beforeEach(inject(($controller: angular.IControllerService, webDevTec: WebDevTecService, toastr: any) => {
     webDevTec.data = [null, null, null, null, null];

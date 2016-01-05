@@ -5,7 +5,7 @@ interface IProjectsScope extends angular.IScope {
 }
 
 /** @ngInject */
-export function acmeMalarkey(malarkey: any): angular.IDirective {
+export function ethcbMalarkey(malarkey: any): angular.IDirective {
 
   return {
     restrict: 'E',
@@ -24,28 +24,28 @@ function linkFunc(scope: IProjectsScope, el: JQuery, attr: any, vm: MalarkeyCont
   var watcher;
 
   var typist = vm.malarkey(el[0], {
-    typeSpeed: 40,
+    typeSpeed: 96,
     deleteSpeed: 40,
     pauseDelay: 800,
     loop: true,
     postfix: ' '
   });
 
-  el.addClass('acme-malarkey');
+  el.addClass('ethcb-malarkey');
 
   angular.forEach(scope.extraValues, function(value: string) {
     typist.type(value).pause().delete();
   });
 
-  watcher = scope.$watch('vm.contributors', function(current: IContributor, original: IContributor) {
-    angular.forEach(vm.contributors, function(contributor: IContributor) {
-      typist.type(contributor.login).pause().delete();
-    });
-  });
-
-  scope.$on('$destroy', function () {
-    watcher();
-  });
+  // watcher = scope.$watch('vm.contributors', function(current: IContributor, original: IContributor) {
+  //   angular.forEach(vm.contributors, function(contributor: IContributor) {
+  //     typist.type(contributor.login).pause().delete();
+  //   });
+  // });
+  //
+  // scope.$on('$destroy', function () {
+  //   watcher();
+  // });
 }
 
 export interface IContributor {

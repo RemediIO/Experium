@@ -1,5 +1,5 @@
 export class GithubContributor {
-  public apiHost: string = 'https://api.github.com/repos/Swiip/generator-gulp-angular';
+  public apiHost: string = 'https://api.github.com/repos/OR13/Ether-Chromebit';
 
   /** @ngInject */
   constructor(private $log: angular.ILogService, private $http: angular.IHttpService) {
