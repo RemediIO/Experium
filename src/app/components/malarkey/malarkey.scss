@@ -6,7 +6,7 @@
   &:after {
     animation: cursor-blink 0.4s linear infinite;
     content: "|";
-    color: #F44336;
+    color: $accent;
   }
 }
 
