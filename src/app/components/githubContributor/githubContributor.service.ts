@@ -1,5 +1,5 @@
 export class GithubContributor {
-  public apiHost: string = 'https://api.github.com/repos/OR13/Ether-Chromebit';
+  public apiHost: string = 'https://api.github.com/repos/OR13/Experium';
 
   /** @ngInject */
   constructor(private $log: angular.ILogService, private $http: angular.IHttpService) {

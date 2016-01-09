@@ -3,7 +3,7 @@ var GithubContributor = (function () {
     function GithubContributor($log, $http) {
         this.$log = $log;
         this.$http = $http;
-        this.apiHost = 'https://api.github.com/repos/OR13/Ether-Chromebit';
+        this.apiHost = 'https://api.github.com/repos/OR13/Experium';
     }
     GithubContributor.prototype.getContributors = function (limit) {
         var _this = this;
