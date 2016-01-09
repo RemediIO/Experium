@@ -10,14 +10,14 @@ describe('directive navbar', function() {
   let navbarController: NavbarController;
   let timeInMs: number;
 
-  beforeEach(angular.mock.module('EtherChromebit'));
+  beforeEach(angular.mock.module('Experium'));
 
   beforeEach(inject(($compile: angular.ICompileService, $rootScope: angular.IRootScopeService) => {
     const currentDate: Date = new Date();
     timeInMs = currentDate.setHours(currentDate.getHours() - 24);
 
     element = angular.element(`
-      <ethcb-navbar creation-date="${timeInMs}"></ethcb-navbar>
+      <experium-navbar creation-date="${timeInMs}"></experium-navbar>
     `);
 
     $compile(element)($rootScope.$new());

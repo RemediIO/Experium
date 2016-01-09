@@ -2,7 +2,7 @@ import { WebDevTecService, ITecThing } from './webDevTec.service';
 
 describe('service webDevTec', () => {
 
-  beforeEach(angular.mock.module('EtherChromebit'));
+  beforeEach(angular.mock.module('Experium'));
 
   it('should be registered', inject((webDevTec: WebDevTecService) => {
     expect(webDevTec).not.toEqual(null);

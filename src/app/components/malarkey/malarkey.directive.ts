@@ -5,7 +5,7 @@ interface IProjectsScope extends angular.IScope {
 }
 
 /** @ngInject */
-export function ethcbMalarkey(malarkey: any): angular.IDirective {
+export function experiumMalarkey(malarkey: any): angular.IDirective {
 
   return {
     restrict: 'E',
@@ -31,7 +31,7 @@ function linkFunc(scope: IProjectsScope, el: JQuery, attr: any, vm: MalarkeyCont
     postfix: ' '
   });
 
-  el.addClass('ethcb-malarkey');
+  el.addClass('experium-malarkey');
 
   angular.forEach(scope.extraValues, function(value: string) {
     typist.type(value).pause().delete();

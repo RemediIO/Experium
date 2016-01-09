@@ -1,7 +1,7 @@
 import { GithubContributor } from './githubContributor.service';
 
 describe('service githubContributor', () => {
-  beforeEach(angular.mock.module('EtherChromebit'));
+  beforeEach(angular.mock.module('Experium'));
 
   it('should be registered', inject((githubContributor: GithubContributor) => {
     expect(githubContributor).not.toBeNull();

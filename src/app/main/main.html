@@ -2,17 +2,19 @@
 
   <md-content>
 
-    <!-- <header>
-      <ethcb-navbar creation-date="main.creationDate"></ethcb-navbar>
-    </header> -->
+    <header>
+      <experium-navbar creation-date="main.creationDate"></experium-navbar>
+    </header>
+
 
     <section class="jumbotron">
-      <h1>Ethereum Chromebit</h1>
+      <experium-malarkey class="experium-uses" extra-values="['Google Cardboard', 'Leap Motion', 'Ethereum']"></experium-malarkey>
 
-      <h3 style="margin-top: 196px">Peer 2 Peer, Distributed, Trustless</h3>
-
-      <ethcb-malarkey class="ethcb-uses" extra-values="['ChromeOS', 'Go Lang', 'Ethereum']"></ethcb-malarkey>
-
+      <h1>Experium</h1>
+      
+      <h2>
+        Distributed + Trustless + Peer 2 Peer Education
+      </h3>
     </section>
 
 
@@ -20,7 +22,7 @@
     <div class="techs" layout-align="center">
       <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
         <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+          <img class="pull-right" ng-src="assets/images/webTec/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
           <h3 class="md-title">{{ awesomeThing.title }}</h3>
           <p>{{ awesomeThing.description }}</p>
         </md-card-content>

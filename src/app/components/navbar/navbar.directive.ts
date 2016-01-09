@@ -1,5 +1,5 @@
 /** @ngInject */
-export function ethcbNavbar(): angular.IDirective {
+export function experiumNavbar(): angular.IDirective {
 
   return {
     restrict: 'E',

@@ -11,7 +11,7 @@ describe('directive malarkey', () => {
   let element: angular.IAugmentedJQuery;
   let malarkeyController: MalarkeyController;
 
-  beforeEach(angular.mock.module('EtherChromebit'));
+  beforeEach(angular.mock.module('Experium'));
 
   beforeEach(inject(($compile: angular.ICompileService, $rootScope: angular.IRootScopeService, githubContributor: GithubContributor, $q: angular.IQService) => {
     spyOn(githubContributor, 'getContributors').and.callFake(() => {
@@ -19,7 +19,7 @@ describe('directive malarkey', () => {
     });
 
     element = angular.element(`
-      <ethcb-malarkey extra-values="['Poney', 'Monkey']"></ethcb-malarkey>
+      <experium-malarkey extra-values="['Poney', 'Monkey']"></experium-malarkey>
     `);
 
     $compile(element)($rootScope.$new());

@@ -1,5 +1,5 @@
 "use strict";
-function ethcbMalarkey(malarkey) {
+function experiumMalarkey(malarkey) {
     return {
         restrict: 'E',
         scope: {
@@ -11,7 +11,7 @@ function ethcbMalarkey(malarkey) {
         controllerAs: 'vm'
     };
 }
-exports.ethcbMalarkey = ethcbMalarkey;
+exports.experiumMalarkey = experiumMalarkey;
 function linkFunc(scope, el, attr, vm) {
     var watcher;
     var typist = vm.malarkey(el[0], {
@@ -21,7 +21,7 @@ function linkFunc(scope, el, attr, vm) {
         loop: true,
         postfix: ' '
     });
-    el.addClass('ethcb-malarkey');
+    el.addClass('experium-malarkey');
     angular.forEach(scope.extraValues, function (value) {
         typist.type(value).pause().delete();
     });
