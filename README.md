@@ -1,4 +1,16 @@
-# Ether Chrombit
+# Experium
 
-1. [Installing and Compiling Golang on Chrome OS](https://github.com/golang/go/wiki/ChromeOS)
-2. [Installing Go-Ethereum](https://github.com/ethereum/go-ethereum)
+Peer 2 Peer Learning with Google Cardboard, Leap Motion & Ethereum
+
+A Team Remedi Project
+
+Installation and Deployment:
+
+```
+$ git clone git@github.com:OR13/Experium.git
+$ cd Experium
+$ npm install && bower install && tsd install
+$ gulp serve
+$ gulp build
+$ gulp gh-deploy
+```
