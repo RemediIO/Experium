@@ -3,9 +3,9 @@ section.jumbotron {
   margin-bottom: 30px;
   padding: 1px 30px;
   background-color: #000;
-  background-image: url("/assets/images/brand/fancy-bg-1.png");
+  background-image: url("/assets/images/brand/girl.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   text-align: left;
   height: 640px;
@@ -19,9 +19,15 @@ section.jumbotron {
   h1 {
     text-align: left;
     color: black;
-    font-size: 3em;
-    margin-bottom: 466px;
+    font-size: 4em;
+    margin-bottom: 362px;
   }
+
+  a.md-button.md-default-theme.md-raised, a.md-button.md-raised, .md-button.md-default-theme.md-raised, .md-button.md-raised
+  .contribute-cta-btn{
+    background-color: #F44336;
+  }
+
 
   h2{
 

@@ -1,12 +1,12 @@
 .experium-malarkey {
   text-transform: capitalize;
-  color: #BEDEAD;
+  color: white;
   font-size: 2em;
 
   &:after {
     animation: cursor-blink 0.4s linear infinite;
     content: "|";
-    color: #cb3837;
+    color: #F44336;
   }
 }
 
